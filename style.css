@@ -1,0 +1,92 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    opacity: 0.0;
+    transition: 1.0s ease-in-out;
+    background-color: #93B1A6;
+}
+
+.top {
+    max-height: max-content;
+    background-color: white;
+    box-shadow: 2px 2px 4px gray;
+    transform: translate(0, -100%);
+    transition: transform 0.8s ease-out;
+}
+
+.topAnimation {
+    transform: translate(0, 0)
+}
+
+
+span {
+    font-weight: bold;
+    color: 5C8374;
+    transition: 0.6s;
+}
+span:hover {
+    color: linear-gradient(to right, rgb(184, 184, 129), white);
+    border-radius: 4px;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px white;
+    opacity: 0.8;
+}
+
+.topDrop {
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.7vmax;
+}
+
+.animation {
+    opacity: 1.0;
+}
+
+.musicCover {
+    max-width: 500px;
+    max-height: 500px;
+    box-shadow: 2px 2px 4px black;
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+}
+
+.musicCover:hover {
+    opacity: 0.8;
+}
+
+#footer {
+    background-color: #ffffff;
+}
+
+#copyRight {
+    background-color: #183D3D;
+    color: white;
+}
+
+@media screen and (max-width: 767px ) {
+    span {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 350px ) {
+    #topNavbar {
+        display: flex;
+        flex-direction: column;
+    }
+    span {
+        margin: 10px 0;
+    }
+    p {
+        font-size: 20px;
+    }
+}
